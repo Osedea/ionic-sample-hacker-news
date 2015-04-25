@@ -1,0 +1,48 @@
+<ion-view>
+  <ion-nav-title>
+    {{ item.title }}
+  </ion-nav-title>
+  <ion-content>
+    <div class="padding text-center" ng-show="isLoading">
+      <ion-spinner></ion-spinner>
+    </div>
+    <div ng-hide="isLoading">
+      <div class="padding details">
+        <p class="item item-body">
+          {{ item.title }}
+        </p>
+        <div class="item item-body">
+          <span class="text" ng-bind-html="item.text"></span>
+          <div class="subdued">
+            <ng-pluralize count="item.points" when="{ '1': '{} point', 'other': '{} points' }">
+            </ng-pluralize>
+            &sdot;
+            <ng-pluralize count="item.children.length" when="{ '1': '{} comment', 'other': '{} comments' }">
+            </ng-pluralize>
+          </div>
+        </div>
+        <p class="item item-divider">
+          Posted by {{ item.author }} on {{ item.created_at | date }}
+        </p>
+      </div>
+
+      <!-- comments -->
+      <div class="padding-horizontal" ng-if="settings.showComments">
+        <div class="comment" ng-repeat="comment in item.children">
+          <div class="item">
+            {{ comment.author }}
+            <span class="item-note">
+              {{ comment.created_at | date }}
+            </span>
+          </div>
+          <div class="item item-body">
+            <span ng-bind-html="comment.text"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="footer positive-bg" ng-hide="isLoading" ng-if="item.url.length">
+    <button class="button button-full button-clear text-light" on-tap="viewUrl()">View</button>
+  </ion-footer-bar>
+</ion-view>

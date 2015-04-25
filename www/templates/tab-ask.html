@@ -1,0 +1,11 @@
+<ion-view view-title="Ask" hide-back-button="true">
+  <ion-content>
+    <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+    <ion-list>
+      <ion-item ng-repeat="item in ask" href="#/tab/ask/details/{{item.objectID}}">
+        {{ item.title }}
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll on-infinite="loadMore()" ng-if="canLoadMore"/>
+  </ion-content>
+</ion-view>

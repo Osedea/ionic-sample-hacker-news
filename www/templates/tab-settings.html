@@ -1,0 +1,16 @@
+<ion-view view-title="Settings">
+  <ion-content>
+    <ion-toggle ng-model="settings.showComments">Show Comments</ion-toggle>
+    <ion-item class="item-divider">
+      Theme
+    </ion-item>
+    <ion-radio ng-model="settings.theme" ng-value="'stable'" class="item-stable"></ion-radio>
+    <ion-radio ng-model="settings.theme" ng-value="'positive'" class="item-positive"></ion-radio>
+    <ion-radio ng-model="settings.theme" ng-value="'balanced'" class="item-balanced"></ion-radio>
+    <ion-radio ng-model="settings.theme" ng-value="'assertive'" class="item-assertive"></ion-radio>
+    <ion-radio ng-model="settings.theme" ng-value="'calm'" class="item-calm"></ion-radio>
+    <ion-radio ng-model="settings.theme" ng-value="'energized'" class="item-energized"></ion-radio>
+    <ion-radio ng-model="settings.theme" ng-value="'royal'" class="item-royal"></ion-radio>
+    <ion-radio ng-model="settings.theme" ng-value="'dark'" class="item-dark"></ion-radio>
+  </ion-content>
+</ion-view>
