@@ -2,7 +2,7 @@
   <ion-nav-title>
     {{ item.title }}
   </ion-nav-title>
-  <ion-content>
+  <ion-content ng-class="{ 'has-footer': item.url.length }">
     <div class="padding text-center" ng-show="isLoading">
       <ion-spinner></ion-spinner>
     </div>
@@ -27,7 +27,7 @@
       </div>
 
       <!-- comments -->
-      <div class="padding-horizontal" ng-if="settings.showComments">
+      <div class="padding-horizontal padding-bottom" ng-if="settings.showComments">
         <div class="comment" ng-repeat="comment in item.children">
           <div class="item">
             {{ comment.author }}

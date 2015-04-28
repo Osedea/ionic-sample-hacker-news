@@ -1,7 +1,7 @@
 Ionic Hacker News Sample App
 ===
 
-# Installation
+## Setup
 
 1. Prerequisites
 
@@ -43,7 +43,9 @@ Ionic Hacker News Sample App
   ```
 6. Build for iOS
 
-  To build and run the app for iOS, do the following command:
+  To build and run the app for iOS, make sure to have Xcode and its CLI tools installed on your machine.
+
+  Then, do the following command:
 
   ```bash
   $ ionic platform add ios
@@ -57,6 +59,6 @@ Ionic Hacker News Sample App
   $ ionic build ios
   ```
 
-  _If you notice that you're getting `FAILED pluginJSON=[...]` errors in Xcode's console, that means not all plugins have been properly added to the project build. One thing you can do is manually add the missing plugins using the `$ cordova plugin add plugin_name` command. You can check all the plugins that have been added to build by going to `ProjectName -> Build Phases -> Compile Sources` in Xcode._
+  _If you notice that you're getting `FAILED pluginJSON=[...]` errors in Xcode's console, that means not all plugins have been properly added to the project build. One thing you can do is manually add the missing plugins using the `$ cordova plugin add plugin_name` command. You can check all the plugins that have been added to the build by going to `ProjectName -> Build Phases -> Compile Sources` in Xcode._
 
   You can run the app on your iOS device by selecting it from Xcode's device selector.

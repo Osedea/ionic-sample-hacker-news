@@ -1,6 +1,6 @@
 {
   "name": "ionic-sample-hacker-news",
-  "app_id": "",
+  "app_id": "570cf413",
   "gulpStartupTasks": [
     "sass",
     "watch"
