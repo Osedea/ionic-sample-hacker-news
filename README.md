@@ -15,7 +15,7 @@ Ionic Hacker News Sample App
   $ npm install -g cordova ionic bower gulp
   ```
 
-  _You might be required to do run the previous command using `sudo`._
+  _You might be required to run the previous command using `sudo`._
 
 3. Clone the project
 
@@ -27,7 +27,7 @@ Ionic Hacker News Sample App
 
 4. Install Dependencies
 
-  Execute the following commands within the new `ionic-sample-hacker-news` directory that was created after you cloned the project:
+  Execute the following commands _within_ the new `ionic-sample-hacker-news` directory that was created after you cloned the project:
 
   ```bash
   $ npm install
@@ -78,7 +78,7 @@ Ionic Hacker News Sample App
   $ ionic platform add android
   ```
 
-  Similar to building for iOS, run the following command to build the for future runs:
+  Similar to building for iOS, run the following command to build the project for future runs:
 
   ```bash
   $ ionic build android
@@ -87,7 +87,7 @@ Ionic Hacker News Sample App
   Run in the default Android emulator by executing the following:
 
   ```bash
-  $ ionic emulate android
+  $ ionic run android
   ```
 
   __Using Crosswalk__
