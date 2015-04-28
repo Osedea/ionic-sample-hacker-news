@@ -41,3 +41,18 @@ Ionic Hacker News Sample App
   ```bash
   $ ionic serve
   ```
+6. Build for iOS
+
+  To build and run the app for iOS, do the following command:
+
+  ```bash
+  $ ionic platform add ios
+  ```
+
+  _When working with a new project, you might not have the permissions to run the previous command. In this case, run the `$ ionic hooks add` command to add all necessary Cordova hooks._
+
+  To build the app for future runs, execute this command:
+
+  ```bash
+  $ ionic build ios
+  ```
