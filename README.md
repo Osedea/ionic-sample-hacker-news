@@ -56,3 +56,7 @@ Ionic Hacker News Sample App
   ```bash
   $ ionic build ios
   ```
+
+  _If you notice that you're getting `FAILED pluginJSON=[...]` errors in Xcode's console, that means not all plugins have been properly added to the project build. One thing you can do is manually add the missing plugins using the `$ cordova plugin add plugin_name` command. You can check all the plugins that have been added to build by going to `ProjectName -> Build Phases -> Compile Sources` in Xcode._
+
+  You can run the app on your iOS device by selecting it from Xcode's device selector.
